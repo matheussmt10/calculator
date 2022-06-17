@@ -10,15 +10,17 @@ body {
 }
 
 div.container {
-
+    position: relative;
     width: 350px;
-    height: 500px;
+    height: 450px;
     background: rgb(22, 154, 187);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
+    padding-bottom: 60px;
+    
 }
 
 div > p {
@@ -29,11 +31,12 @@ div > p {
 }
 
 .numbers {
+    position: relative;
     height: 200px;
     width: 275px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 50px;
+    margin-top: 20px;
     
 }
 .number:hover {
@@ -43,7 +46,7 @@ div > p {
 }
 
 
-.number {
+.button {
     border: solid 1px black;
     background: black;
     width: 60px;
@@ -55,6 +58,8 @@ div > p {
     justify-content: center;
     align-items: center;
 }
+
+
 
 .textStyle {
     font: normal 15pt Arial;

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1dc7ab5fc2.js" crossorigin="anonymous"></script>
     </head>
 
 <body>
@@ -13,32 +14,42 @@
         <p>Calculator</p>
         <div id="screen" class="screen"></div>
         <div class="numbers">
-            <div id="button" class="number textStyle n7" onclick="insert('7')">7</div>
-            <div id="button" class="number textStyle n8" onclick="insert('8')">8</div>
-            <div id="button" class="number textStyle n9" onclick="insert('9')">9</div>
-
-            <div id="button" class="number textStyle opMais" onclick="insert('+')">+</div>
-
-            <div id="button" class="number textStyle n4" onclick="insert('4')">4</div>
-            <div id="button" class="number textStyle n5" onclick="insert('5')">5</div>
-            <div id="button" class="number textStyle n6" onclick="insert('6')">6</div>
-
-            <div id="button" class="number textStyle opMenos" onclick="insert('-')">-</div>
-
-            <div id="button" class="number textStyle n1" onclick="insert('1')">1</div>
-            <div id="button" class="number textStyle n2" onclick="insert('2')">2</div>
-            <div id="button" class="number textStyle n3" onclick="insert('3')">3</div>
-
-            <div id="button" class="number textStyle opMult" onclick="insert('*')">*</div>
-
-            <div id="button" class="number textStyle n0" onclick="insert('0')">0</div>
-            <div id="button" class="number textStyle opAc" onclick="clean()">AC</div>
-
-            <div id="button" class="number textStyle opIgual" onclick="confirmCal()">=</div>
-            <div id="button" class="number textStyle opDiv" onclick="insert('/')">/</div>
+            <table>
+                <tr>
+                    <td colspan="2"><button class="button" style="width: 128px; background-color: rgb(29, 41, 51);border: none;">AC</button></td>
+                    <td><button class="button fa-solid fa-delete-left"></button></td>
+                    <td><button class="button fa-solid fa-divide" style="background-color: rgb(29, 41, 51);border: none;"></button></td>
+                    
+                </tr>
+                <tr>
+                    <td><button class="button">7</button></td>
+                    <td><button class="button">8</button></td>
+                    <td><button class="button">9</button></td>
+                    <td><button class="button" style="background-color: rgb(29, 41, 51);border: none;">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button">4</button></td>
+                    <td><button class="button">5</button></td>
+                    <td><button class="button">6</button></td>
+                    <td><button class="button" style="background-color: rgb(29, 41, 51);border: none;">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button">1</button></td>
+                    <td><button class="button">2</button></td>
+                    <td><button class="button">3</button></td>
+                    <td><button class="button" style="background-color: rgb(29, 41, 51);border: none;">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button">0</button></td>
+                    <td><button class="button">.</button></td>
+                    <td colspan="2"><button class="button" style="width: 128px; background-color: rgb(29, 41, 51);border: none;">=</button></td>
+                </tr>
+            </table>
         </div>
     </div>
     <script src="/script.js">
     </script>
 </body>
 </html>
+
+
