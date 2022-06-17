@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <div class="container">
+        <p>Calculator</p>
+        <div id="screen" class="screen"></div>
+        <div class="numbers">
+            <div id="button" class="number textStyle n7" onclick="insert('7')">7</div>
+            <div id="button" class="number textStyle n8" onclick="insert('8')">8</div>
+            <div id="button" class="number textStyle n9" onclick="insert('9')">9</div>
+
+            <div id="button" class="number textStyle opMais" onclick="insert('+')">+</div>
+
+            <div id="button" class="number textStyle n4" onclick="insert('4')">4</div>
+            <div id="button" class="number textStyle n5" onclick="insert('5')">5</div>
+            <div id="button" class="number textStyle n6" onclick="insert('6')">6</div>
+
+            <div id="button" class="number textStyle opMenos" onclick="insert('-')">-</div>
+
+            <div id="button" class="number textStyle n1" onclick="insert('1')">1</div>
+            <div id="button" class="number textStyle n2" onclick="insert('2')">2</div>
+            <div id="button" class="number textStyle n3" onclick="insert('3')">3</div>
+
+            <div id="button" class="number textStyle opMult" onclick="insert('*')">*</div>
+
+            <div id="button" class="number textStyle n0" onclick="insert('0')">0</div>
+            <div id="button" class="number textStyle opAc" onclick="clean()">AC</div>
+
+            <div id="button" class="number textStyle opIgual" onclick="confirmCal()">=</div>
+            <div id="button" class="number textStyle opDiv" onclick="insert('/')">/</div>
+        </div>
+    </div>
+    <script src="/script.js">
+    </script>
+</body>
+</html>
