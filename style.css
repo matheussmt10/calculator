@@ -11,32 +11,92 @@ body {
 
 div.container {
     position: relative;
-    width: 350px;
-    height: 450px;
-    background: rgb(22, 154, 187);
+    width: 310px;
+    height: 500px;
+    background: rgb(38, 39, 39);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 20px;
     padding-bottom: 60px;
+    border-radius: 20px;
+    border-top-right-radius: 50% 10%;
+    border-top-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    border-bottom-left-radius: 50% 10%;
+}
+
+.miniScreen {
+    position: relative;
+    background-color: ;
+    width: 270px;
+    height: 40px;
+    margin-top: -15px;
+    margin-bottom: 30px;
+    display: flex;
     
 }
 
-div > p {
-    font: bold 15pt Arial;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+.boxLeft {
+    
+    
+    width: 135px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.boxLeftLine {
+    background: black;
+    border-right: 1px solid white;
+    width: 100%;
+    height: 100%;
     
 }
+
+.boxLeftLine:last-child {
+    border-right: none;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.boxLeftLine:first-child {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.boxRight {
+    position: relative;
+    
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: -24px;
+    justify-content: center;
+}
+
+.boxRight > h1 {
+    font: bold 12pt Arial;
+    margin-left: 15px;
+    color: white;
+}
+
+.boxRight > p {
+    font: bold 7pt Arial;
+    text-transform: uppercase;
+    margin-left: 15px;
+    color: white;
+}
+
 
 .numbers {
     position: relative;
     height: 200px;
     width: 275px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 20px;
+    justify-content: center;
     
 }
 .number:hover {
@@ -48,33 +108,91 @@ div > p {
 
 .button {
     border: solid 1px black;
-    background: black;
-    width: 60px;
-    height: 50px;
-    margin: 3px;
+    background: rgb(38, 39, 39);;
+    width: 50px;
+    height: 40px;
+    margin: 2px;
     border-radius: 10px;
     color: white; 
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px groove rgb(30, 31, 31);
+    font: extra-expanded 15pt Arial;
 }
 
 
-
-.textStyle {
-    font: normal 15pt Arial;
+.containerScreen {
+    display: flex;
+    background-color: rgb(30, 31, 31);
+    width: 290px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px ;
     
+
 }
 .screen {
     
     font: normal 20pt Arial;
-    background: white;
-    width: 300px;
-    height: 100px;
+    background: rgb(180, 196, 167);
+    width: 250px;
+    height: 40px;
     display: flex;
     justify-content: right;
-    padding-right: 10px;
+    
     align-items: center;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px;
+    border-radius: 9px;
+    border: 4px groove rgb(30, 31, 31);
+}
+
+
+.onCe {
+    border-radius: 100%;
+    background: rgb(53, 192, 162);
+    padding-top: 23px;
+    padding-bottom: 23px;
+    display: flex;
+    flex-direction: column;
+    border: 3px groove rgb(30, 31, 31);
+}
+
+.onCe > p:first-child {
+    border-bottom: 2px white solid;
+    
+}
+
+.onCe > p {
+    font: bold 10pt Arial;
+}
+
+.buttonMem {
+    background: rgb(199, 189, 46);
+    width: 100%;
+    height: 25px;
+    border-radius: 41%;
+    border: 3px groove rgb(30, 31, 31);
+    
+}
+
+.buttonMem > p {
+    color: white;
+    margin-top: -30px;
+    font: normal 10pt Arial;
+}
+
+.squareRoot {
+    background-size: 20px;
+    background-image: url(/square-root.png);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-position-x: 10px;
+    background-position-y: 6px;
+}
+
+.fa-equals {
+    font-size: 25pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
