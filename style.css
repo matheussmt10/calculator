@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/ds-digital');
+
 * {
     padding: 0px;
     margin: 0px;
@@ -147,13 +149,13 @@ div.container {
 }
 .screen {
     
-    font: normal 20pt Arial;
+    font: bold 23pt Arial;
     background: rgb(180, 196, 167);
     width: 180px;
     height: 40px;
     display: flex;
     justify-content: right;
-    
+    font-family: 'DS-Digital', sans-serif;
     align-items: center;
     border-radius: 9px;
     border: 4px groove rgb(30, 31, 31);

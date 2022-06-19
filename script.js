@@ -17,16 +17,35 @@ const screen = document.querySelector('#screen')
 }); */
 
 function insert(value) {
-    
+    if(screen.innerHTML == 0) {
+        screen.innerHTML = '';
+    }
     screen.innerHTML += value;
+    
 }
 
 function clean() {
-    screen.innerHTML = '';
+    
+    screen.innerHTML = '0';
+    
 }
 
+const operator = document.getElementsByClassName('operator')
 function confirmCal() {
     if (screen.innerHTML != 'Erro') {
         screen.innerHTML = eval(screen.innerHTML)
+    }
+}
+
+
+
+
+function insertOp() {
+
+}
+
+function calculator(valueA, valueB, operation) {
+    if(operation === '+'){
+        return valueA + valueB
     }
 }

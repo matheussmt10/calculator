@@ -46,34 +46,34 @@
                     <tr>
                         <td ><button class="button off" onclick="insert('')">OFF</button></td>
                         <td><button class="button squareRoot" onclick="insert('')"></button></td>
-                        <td><button class="button" onclick="insert('')">%</button></td>
-                        <td><button class="button fa-solid fa-divide" onclick="confirmCal()"></button></td>
+                        <td><button class="button" onclick="insertOp('%')">%</button></td>
+                        <td><button class="button fa-solid fa-divide" onclick="insertOp('/')"></button></td>
                         
                     </tr>
                     <tr>
                         <td><button class="button" onclick="insert('7')">7</button></td>
                         <td><button class="button" onclick="insert('8')">8</button></td>
                         <td><button class="button" onclick="insert('9')">9</button></td>
-                        <td><button class="button fa-solid fa-xmark"  onclick="confirmCal()"></button></td>
+                        <td><button class="button fa-solid fa-xmark"  onclick="insertOp('*')"></button></td>
                     </tr>
                     <tr>
                         <td><button class="button" onclick="insert('4')">4</button></td>
                         <td><button class="button" onclick="insert('5')">5</button></td>
                         <td><button class="button" onclick="insert('6')">6</button></td>
-                        <td><button class="button buttonMin fa-solid fa-minus"  onclick="confirmCal()"></button></td>
+                        <td><button class="button buttonMin fa-solid fa-minus operator" onclick="insertOp('-')"></button></td>
                     </tr>
                     <tr>
                         <td><button class="button" onclick="insert('1')">1</button></td>
                         <td><button class="button" onclick="insert('2')">2</button></td>
                         <td><button class="button" onclick="insert('3')">3</button></td>
-                        <td rowspan="2"><button class="button" style="height: 90px; background: rgb(53, 192, 162); font-size: 30pt;" onclick="insert('+')">+</button></td>
+                        <td rowspan="2"><button class="button" style="height: 90px; background: rgb(53, 192, 162); font-size: 30pt;" onclick="insertOp('+')">+</button></td>
                     </tr>
                     <tr>
-                        <td><button class="button" onclick="insert('')">0</button></td>
-                        <td><button class="button" onclick="insert('')">
+                        <td><button class="button" onclick="insert('0')">0</button></td>
+                        <td><button class="button" onclick="insert('.')">
                             <div style="width: 8px; height: 8px; background: white; border-radius: 100%;"></div>
                         </button></td>
-                        <td><button class="button  fa-equals"  onclick="confirmCal()"></button></td>
+                        <td><button class="button  fa-equals"  onclick="calculator()"></button></td>
                     </tr>
                 </table>
             </div>
