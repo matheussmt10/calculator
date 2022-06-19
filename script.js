@@ -17,6 +17,7 @@ const screen = document.querySelector('#screen')
 }); */
 
 function insert(value) {
+    
     screen.innerHTML += value;
 }
 

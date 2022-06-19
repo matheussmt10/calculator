@@ -11,69 +11,75 @@
 
 <body>
     <div class="container">
-        <div class="miniScreen textBrand">
-            <div class="miniScreenContent boxLeft">
-                <div class="boxLeftLine"></div>
-                <div class="boxLeftLine"></div>
-                <div class="boxLeftLine"></div>
-                <div class="boxLeftLine"></div>
+        <section class="sectionUp">
+            <div class="miniScreen textBrand">
+                <div class="miniScreenContent boxLeft">
+                    <div class="boxLeftLine"></div>
+                    <div class="boxLeftLine"></div>
+                    <div class="boxLeftLine"></div>
+                    <div class="boxLeftLine"></div>
+                </div>
+                <div class="miniScreenContent boxRight">
+                    <h1>MM-001</h1>
+                    <p>Electronic Calculator</p>
+                </div>
+    
             </div>
-            <div class="miniScreenContent boxRight">
-                <h1>MM-001</h1>
-                <p>Electronic Calculator</p>
+            <div class="containerScreen">
+                <div id="screen" class="screen"></div>
             </div>
 
-        </div>
-        <div class="containerScreen">
-            <div id="screen" class="screen"></div>
-        </div>
+        </section>
+        <section class="sectionDown">
+            <div class="numbers">
+                <table >
+                    <tr >
+                        <td ><button class="buttonOn onCe" onclick="clean()">
+                            <p>ON</p>
+                            <p>CE</p>
+                        </button></td>
+                        <td><button class="buttonMem mrc" onclick="insert('')"><p>MRC</p></button></td>
+                        <td><button class="buttonMem mMin" onclick="insert('')"><p>M-</p></button></td>
+                        <td><button class="buttonMem mSum" onclick="insert('')"><p>M+</p></button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td ><button class="button off" onclick="insert('')">OFF</button></td>
+                        <td><button class="button squareRoot" onclick="insert('')"></button></td>
+                        <td><button class="button" onclick="insert('')">%</button></td>
+                        <td><button class="button fa-solid fa-divide" onclick="confirmCal()"></button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><button class="button" onclick="insert('7')">7</button></td>
+                        <td><button class="button" onclick="insert('8')">8</button></td>
+                        <td><button class="button" onclick="insert('9')">9</button></td>
+                        <td><button class="button fa-solid fa-xmark"  onclick="confirmCal()"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button" onclick="insert('4')">4</button></td>
+                        <td><button class="button" onclick="insert('5')">5</button></td>
+                        <td><button class="button" onclick="insert('6')">6</button></td>
+                        <td><button class="button buttonMin fa-solid fa-minus"  onclick="confirmCal()"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button" onclick="insert('1')">1</button></td>
+                        <td><button class="button" onclick="insert('2')">2</button></td>
+                        <td><button class="button" onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button class="button" style="height: 90px; background: rgb(53, 192, 162); font-size: 30pt;" onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button" onclick="insert('')">0</button></td>
+                        <td><button class="button" onclick="insert('')">
+                            <div style="width: 8px; height: 8px; background: white; border-radius: 100%;"></div>
+                        </button></td>
+                        <td><button class="button  fa-equals"  onclick="confirmCal()"></button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
         
-        <div class="numbers">
-            <table>
-                <tr>
-                    <td ><button class="button onCe">
-                        <p>ON</p>
-                        <p>CE</p>
-                    </button></td>
-                    <td><button class="buttonMem mrc"><p>MRC</p></button></td>
-                    <td><button class="buttonMem mMin"><p>M-</p></button></td>
-                    <td><button class="buttonMem mSum"><p>M+</p></button></td>
-                    
-                </tr>
-                <tr>
-                    <td ><button class="button off">OFF</button></td>
-                    <td><button class="button squareRoot"></button></td>
-                    <td><button class="button">%</button></td>
-                    <td><button class="button fa-solid fa-divide"></button></td>
-                    
-                </tr>
-                <tr>
-                    <td><button class="button">7</button></td>
-                    <td><button class="button">8</button></td>
-                    <td><button class="button">9</button></td>
-                    <td><button class="button fa-solid fa-xmark" ></button></td>
-                </tr>
-                <tr>
-                    <td><button class="button">4</button></td>
-                    <td><button class="button">5</button></td>
-                    <td><button class="button">6</button></td>
-                    <td><button class="button buttonMin fa-solid fa-minus" ></button></td>
-                </tr>
-                <tr>
-                    <td><button class="button">1</button></td>
-                    <td><button class="button">2</button></td>
-                    <td><button class="button">3</button></td>
-                    <td rowspan="2"><button class="button" style="height: 90px; background: rgb(53, 192, 162); font-size: 30pt;">+</button></td>
-                </tr>
-                <tr>
-                    <td><button class="button">0</button></td>
-                    <td><button class="button">
-                        <div style="width: 8px; height: 8px; background: white; border-radius: 100%;"></div>
-                    </button></td>
-                    <td><button class="button  fa-equals" ></button></td>
-                </tr>
-            </table>
-        </div>
+        
     </div>
     <script src="/script.js">
     </script>
