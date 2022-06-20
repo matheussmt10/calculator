@@ -34,7 +34,7 @@
             <div class="numbers">
                 <table >
                     <tr >
-                        <td ><button class="buttonOn onCe" onclick="clean()">
+                        <td ><button class="buttonOn onCe" onclick="calculadora.ac()">
                             <p>ON</p>
                             <p>CE</p>
                         </button></td>
@@ -44,36 +44,36 @@
                         
                     </tr>
                     <tr>
-                        <td ><button class="button off" onclick="insert('')">OFF</button></td>
-                        <td><button class="button squareRoot" onclick="insert('')"></button></td>
-                        <td><button class="button" onclick="insertOp('%')">%</button></td>
-                        <td><button class="button fa-solid fa-divide" onclick="insertOp('/')"></button></td>
+                        <td ><button class="button off" onclick="calculadora.off()">OFF</button></td>
+                        <td><button class="button squareRoot" onclick="calculadora.raiz()"></button></td>
+                        <td><button class="button" onclick="calculadora.porcento()">%</button></td>
+                        <td><button class="button fa-solid fa-divide" onclick="calculadora.divisao()"></button></td>
                         
                     </tr>
                     <tr>
-                        <td><button class="button" onclick="insert('7')">7</button></td>
-                        <td><button class="button" onclick="insert('8')">8</button></td>
-                        <td><button class="button" onclick="insert('9')">9</button></td>
-                        <td><button class="button fa-solid fa-xmark"  onclick="insertOp('*')"></button></td>
+                        <td><button class="button" onclick="calculadora.proximoNumero(7)">7</button></td>
+                        <td><button class="button" onclick="calculadora.proximoNumero(8)">8</button></td>
+                        <td><button class="button" onclick="calculadora.proximoNumero(9)">9</button></td>
+                        <td><button class="button fa-solid fa-xmark"  onclick="calculadora.multiplicacao()"></button></td>
                     </tr>
                     <tr>
-                        <td><button class="button" onclick="insert('4')">4</button></td>
-                        <td><button class="button" onclick="insert('5')">5</button></td>
-                        <td><button class="button" onclick="insert('6')">6</button></td>
-                        <td><button class="button buttonMin fa-solid fa-minus operator" onclick="insertOp('-')"></button></td>
+                        <td><button class="button" onclick="calculadora.proximoNumero(4)">4</button></td>
+                        <td><button class="button" onclick="calculadora.proximoNumero(5)">5</button></td>
+                        <td><button class="button" onclick="calculadora.proximoNumero(6)">6</button></td>
+                        <td><button class="button buttonMin fa-solid fa-minus operator" onclick="calculadora.subtracao()"></button></td>
                     </tr>
                     <tr>
-                        <td><button class="button" onclick="insert('1')">1</button></td>
-                        <td><button class="button" onclick="insert('2')">2</button></td>
-                        <td><button class="button" onclick="insert('3')">3</button></td>
-                        <td rowspan="2"><button class="button" style="height: 90px; background: rgb(53, 192, 162); font-size: 30pt;" onclick="insertOp('+')">+</button></td>
+                        <td><button class="button" onclick="calculadora.proximoNumero(1)">1</button></td>
+                        <td><button class="button" onclick="calculadora.proximoNumero(2)">2</button></td>
+                        <td><button class="button" onclick="calculadora.proximoNumero(3)">3</button></td>
+                        <td rowspan="2"><button class="button" style="height: 90px; background: rgb(53, 192, 162); font-size: 30pt;" onclick="calculadora.adicao()">+</button></td>
                     </tr>
                     <tr>
-                        <td><button class="button" onclick="insert('0')">0</button></td>
-                        <td><button class="button" onclick="insert('.')">
+                        <td><button class="button" onclick="calculadora.proximoNumero(0)">0</button></td>
+                        <td><button class="button" onclick="calculadora.proximoNumero('.')">
                             <div style="width: 8px; height: 8px; background: white; border-radius: 100%;"></div>
                         </button></td>
-                        <td><button class="button  fa-equals"  onclick="calculator()"></button></td>
+                        <td><button class="button  fa-equals"  onclick="calculadora.igual()"></button></td>
                     </tr>
                 </table>
             </div>
