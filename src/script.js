@@ -140,6 +140,10 @@ let calculadora = {
 
     },
 
+    memoryPlus: function(){
+        document.getElementById("screen").innerHTML = '<div class="memoryMPlus">M<div/>';
+    }
+
 }
 
 

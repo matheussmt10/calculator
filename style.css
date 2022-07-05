@@ -162,6 +162,13 @@ div.container {
 }
 
 
+.memoryMPlus {
+    position: absolute;
+    left: 55px;
+    font-size: 13pt;
+    top: 80px;
+}
+
 .onCe {
     border-radius: 100%;
     background: rgb(53, 192, 162);
@@ -218,7 +225,7 @@ div.container {
 
 .squareRoot {
     background-size: 20px;
-    background-image: url(/square-root.png);
+    background-image: url(/img/square-root.png);
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
