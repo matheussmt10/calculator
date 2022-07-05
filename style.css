@@ -225,7 +225,8 @@ div.container {
 
 .squareRoot {
     background-size: 20px;
-    background-image: url(/img/square-root.png);
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA5klEQVRIie2TMQ4BQRSGZ6k0si2tKBRK0agkdCpxBQfQiBuIAygcQZyAiIhW4hpKolHg0/zFs43Y3Ylm/2rmvd3ve5PdcS6LzwB54MBnDvaZXEJH3znXinoTMg0Jjpp6mBrUwLuCn4GCD8FWgrEPeEPwKxD6EKwkmPqAV4AHcAfKcQD2v94DuUh/od4i7oTRi9MzvZImfwDVWAIDG0mwNrWZastEcMFC4CZgHSgCF+2biQWSzAWcAxOtN6nAJagBL53kLEEnNYEka/PBT0CQtqBnBINf3/86je7BTtt2EATPXyVZ/ps3fnEn8LgVHIEAAAAASUVORK5CYII=");
+    color: white;
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
